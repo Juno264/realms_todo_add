@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/navi_smile">
+
+    <fragment android:id="@+id/navi_smile"
+        android:name="com.outlook.jung.realms_todo_add.Fragment1"
+        android:label="Fragment1"/>
+
+    <fragment android:id="@+id/navi_pets"
+        android:name="com.outlook.jung.realms_todo_add.Fragment2"
+        android:label="Fragment2"/>
+
+</navigation>
