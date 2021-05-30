@@ -28,9 +28,7 @@ class Fragment1 : Fragment() {
         Realm.getDefaultInstance()
     }
 
-//    lateinit var adapter: WordAdapter
-
-
+    private lateinit var adapter: WordAdapter
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -99,8 +97,8 @@ class Fragment1 : Fragment() {
             }
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-//                val timeTasks = adapter.getItems()
-//                mainViewModel.delete(timeTasks[viewHolder.adapterPosition])
+                val timeTasks = adapter.getItems()
+                mainViewModel.delete(timeTasks[viewHolder.adapterPosition])
             }
 
             override fun onChildDraw(
